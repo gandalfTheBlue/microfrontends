@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "webpack-dev-server --port=3001",
-    "build": "webpack",
+    "build": "cross-env NODE_ENV=production webpack",
     "test": "karma start ./karma.conf.js",
     "lint": "ng lint",
     "e2e": "protractor ./protractor.conf.js",
@@ -41,6 +41,7 @@
     "circular-dependency-plugin": "^4.2.1",
     "codelyzer": "^4.0.1",
     "copy-webpack-plugin": "~4.4.1",
+    "cross-env": "^5.2.0",
     "express": "^4.16.3",
     "file-loader": "^1.1.5",
     "html-webpack-plugin": "^2.29.0",
@@ -56,6 +57,7 @@
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.10",
     "postcss-url": "^7.1.2",
+    "prettier": "^1.17.0",
     "protractor": "~5.1.2",
     "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.6",
@@ -68,5 +70,8 @@
     "url-loader": "^0.6.2",
     "webpack": "~3.11.0",
     "webpack-dev-server": "~2.11.0"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }
