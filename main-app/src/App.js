@@ -93,12 +93,16 @@ function App() {
           <Icon
             className="trigger"
             type={collapsed ? 'menu-unfold' : 'menu-fold'}
-            onClick={() => setCollapsed(!collapsed)}
+            onClick={() => {
+              setCollapsed(!collapsed);
+              eventBus.emit('test', { data: 'test' });
+            }}
           />
           <img src={logo} className="reactLogo" alt="logo" />
           <h1 className="App-title">Welcome to React Portal</h1>
         </Header>
         <Content className="content">
+          <div id="react-app" />
           {/* <Bubble eventBus={eventBus} />
           <Pies eventBus={eventBus} /> */}
         </Content>
