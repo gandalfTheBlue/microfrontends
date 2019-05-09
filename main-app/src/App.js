@@ -103,6 +103,7 @@ function App() {
         </Header>
         <Content className="content">
           <div id="react-app" />
+          <div id="angular-app" />
           {/* <Bubble eventBus={eventBus} />
           <Pies eventBus={eventBus} /> */}
         </Content>
