@@ -1,0 +1,9 @@
+.pies-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+.pie {
+  min-width: 400px;
+}

@@ -1,10 +1,10 @@
 import { Component, OnInit, ChangeDetectorRef, Inject } from '@angular/core';
 import { eventOn, eventOff } from '../utils/eventBus';
-import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-pie-charts',
-  templateUrl: './pie-chart.component.html'
+  templateUrl: './pie-chart.component.html',
+  styleUrls: ['./pie-chart.component.css']
 })
 export class PieChartComponent implements OnInit {
   constructor(

@@ -1,3 +1,5 @@
-<div class="card card-block" *ngFor="let key of objectKeys(optionArr)">
-  <div echarts [options]="optionArr[key]"></div>
+<div class="pies-container">
+  <div *ngFor="let key of objectKeys(optionArr)">
+    <div echarts [options]="optionArr[key]" class="pie"></div>
+  </div>
 </div>
