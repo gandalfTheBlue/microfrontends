@@ -2,6 +2,8 @@
   padding: 20px;
   color: yellow;
   background-color: #f7f8fa;
+  display: flex;
+  overflow-x: auto;
 }
 
 .start-stop-button {
